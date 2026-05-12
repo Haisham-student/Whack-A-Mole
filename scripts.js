@@ -31,12 +31,19 @@ $(".hole").on("click", function (e) {
 
 
     // Do nothing if no mole or already hit
+    if (mole.hasClass("hidden") || moleHit.is(":visible")) return;
 
     // play the hit sound
+    playSound();
 
     // hide the mole, show the hit mole
+    mole.addClass("hidden");
+    moleHit.removeClass("hidden");
 
     // 500ms later hide the hit mole
+    setTimeout(function(){
+        moleHit.addClass("hidden")
+    }, 500);
 });
 
 // add a function that every second randomly shows a mole from the list of moles

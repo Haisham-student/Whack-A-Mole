@@ -33,7 +33,7 @@ body {
 
 .hole {
     /* uncomment to visualize area of hole */
-    /*border: 1px solid black;*/
+    /* border: 1px solid black; */
 
     width: 250px;
     height: 140px;
@@ -42,11 +42,11 @@ body {
     background-position: bottom center;
 
     display: flex;
-    flex-direction: column;
-    justify-content: center;
+    flex-direction: row;
+    justify-content: space-around;
     align-items: flex-end;
 
-
+    padding-bottom: 50px;
 
     
 
