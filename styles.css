@@ -1,0 +1,64 @@
+body {
+    cursor: none;
+}
+
+.title {
+    text-align: center;
+}
+
+.center {
+    margin: 0 auto;
+    width: fit-content;
+}
+
+.board {
+    margin: 0 auto;
+    width: 1000px;
+    height: 700px;
+
+
+
+    background: url("./assets/fundo.svg");
+    background-size: contain;
+
+    /* add your position relative to position the hammer */
+
+    /* add your flexbox styles to arrange the holes */
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.hole {
+    /* uncomment to visualize area of hole */
+    /*border: 1px solid black;*/
+
+    width: 250px;
+    height: 140px;
+    background: url("./assets/toupeira6.svg");
+    background-repeat: no-repeat;
+    background-position: bottom center;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+
+
+
+    
+
+    /* use flexbox here to center the mole inside the hole */
+}
+
+.hidden {
+    display: none;
+}
+
+.hammer {
+    position: absolute;
+    transform-origin: center center;
+    pointer-events: none;
+}
